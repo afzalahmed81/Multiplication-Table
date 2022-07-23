@@ -20,13 +20,13 @@
                 <input type="number" min="1" required id="number" placeholder="Enter a number">
 
                 <button type="submit">Print</button>
-                <!-- <button onclick="resfun()">Clear</button> -->
-                <!-- <input type = "button" value = "Clear" onclick="funclear()"/> -->
+                <button id="clr-btn" onclick="funclear()">Clear</button>
+                <!-- <input class="clr-btn" type = "button" value = "Clear" onclick="funclear()"/> -->
                 
             </form>
         </div>
         <h2 id="table"></h2>
-        <p>Code by Afzal Ahmed</p>
+        <p>Coded by Afzal Ahmed</p>
 
     </div>
 
@@ -34,7 +34,8 @@
 
     <script>
          function funclear() {
-            document.getElementById("#myform").reset();
+            // document.getElementById("#myform").reset();
+            location.reload();
         }
         function calculate() {
             let number = document.querySelector("#number").value;
